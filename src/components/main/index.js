@@ -134,7 +134,7 @@ const Main = () => {
                 name="fullName"
                 required
                 onChange={(e) => {
-                  if (e.target.value) {
+                  if (e.target.value.trim().length >= 2) {
                     setError("");
                   } else {
                     setError("Full name is required");
